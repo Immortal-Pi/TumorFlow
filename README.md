@@ -8,7 +8,7 @@ May the data be with you
 ### STEPS:
 Clone the repository
 ```bash
-https://github.com/Immortal-Pi/TumorFlow.git
+https://github.com/Immortal-Pi/TumorFlow
 ```
 
 ### STEP 01- Create a conda environment after opening the repository
