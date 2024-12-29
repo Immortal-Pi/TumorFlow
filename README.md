@@ -8,7 +8,7 @@ May the data be with you
 ### STEPS:
 Clone the repository
 ```bash
-https://github.com/krishnaik06/Kidney-Disease-Classification-Deep-Learning-Project
+https://github.com/Immortal-Pi/TumorFlow.git
 ```
 
 ### STEP 01- Create a conda environment after opening the repository
