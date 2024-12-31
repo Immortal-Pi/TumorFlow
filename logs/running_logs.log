@@ -17,3 +17,175 @@
 [2024-12-30 16:54:34,037: INFO: common: created directory at: artifacts/data_ingestion]
 [2024-12-30 16:54:34,038: INFO: 156215883: Downloading data from https://drive.google.com/file/d/1Lx_zNHPtr2CzHVrRjnJg7TEiaIX-72lz/view?usp=sharing into file artifacts/data_ingestion/data.zip]
 [2024-12-30 16:54:39,615: INFO: 156215883: Downloaded data from https://drive.google.com/file/d/1Lx_zNHPtr2CzHVrRjnJg7TEiaIX-72lz/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-12-30 17:59:16,228: INFO: main: >>>> stage Data Ingestion stage started <<<<]
+[2024-12-30 17:59:16,229: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-30 17:59:16,230: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-30 17:59:16,231: INFO: common: created directory at: artifacts]
+[2024-12-30 17:59:16,231: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-12-30 17:59:16,231: ERROR: main: "'ConfigBox' object has no attribute 'source_url'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\pythonProjects\mlflow_kidney_tumor\main.py", line 9, in <module>
+    obj.main()
+  File "d:\pythonprojects\mlflow_kidney_tumor\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion_config=config.get_data_ingestion_config()
+  File "d:\pythonprojects\mlflow_kidney_tumor\src\cnnClassifier\config\configuration.py", line 23, in get_data_ingestion_config
+    source_Url=config.source_url,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+[2024-12-30 18:00:40,718: INFO: main: >>>> stage Data Ingestion stage started <<<<]
+[2024-12-30 18:00:40,720: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-30 18:00:40,721: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-30 18:00:40,721: INFO: common: created directory at: artifacts]
+[2024-12-30 18:00:40,721: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-12-30 18:00:40,722: ERROR: main: "'ConfigBox' object has no attribute 'source_url'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_Url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_Url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_Url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_Url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\pythonProjects\mlflow_kidney_tumor\main.py", line 9, in <module>
+    obj.main()
+  File "d:\pythonprojects\mlflow_kidney_tumor\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion_config=config.get_data_ingestion_config()
+  File "d:\pythonprojects\mlflow_kidney_tumor\src\cnnClassifier\config\configuration.py", line 23, in get_data_ingestion_config
+    source_Url=config.source_Url,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+[2024-12-30 18:01:37,979: INFO: main: >>>> stage Data Ingestion stage started <<<<]
+[2024-12-30 18:01:37,980: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-30 18:01:37,981: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-30 18:01:37,982: INFO: common: created directory at: artifacts]
+[2024-12-30 18:01:37,982: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-12-30 18:01:37,982: ERROR: main: __init__() got an unexpected keyword argument 'source_URL']
+Traceback (most recent call last):
+  File "D:\pythonProjects\mlflow_kidney_tumor\main.py", line 9, in <module>
+    obj.main()
+  File "d:\pythonprojects\mlflow_kidney_tumor\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion_config=config.get_data_ingestion_config()
+  File "d:\pythonprojects\mlflow_kidney_tumor\src\cnnClassifier\config\configuration.py", line 21, in get_data_ingestion_config
+    data_ingestion_config=DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'source_URL'
+[2024-12-30 18:02:21,399: INFO: main: >>>> stage Data Ingestion stage started <<<<]
+[2024-12-30 18:02:21,400: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-30 18:02:21,401: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-30 18:02:21,402: INFO: common: created directory at: artifacts]
+[2024-12-30 18:02:21,402: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-12-30 18:02:21,402: ERROR: main: 'DataIngestionConfig' object has no attribute 'source_Url']
+Traceback (most recent call last):
+  File "D:\pythonProjects\mlflow_kidney_tumor\main.py", line 9, in <module>
+    obj.main()
+  File "d:\pythonprojects\mlflow_kidney_tumor\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "d:\pythonprojects\mlflow_kidney_tumor\src\cnnClassifier\components\data_ingestion.py", line 29, in download_file
+    raise e
+  File "d:\pythonprojects\mlflow_kidney_tumor\src\cnnClassifier\components\data_ingestion.py", line 18, in download_file
+    dataset_url=self.config.source_Url
+AttributeError: 'DataIngestionConfig' object has no attribute 'source_Url'
+[2024-12-30 18:03:24,117: INFO: main: >>>> stage Data Ingestion stage started <<<<]
+[2024-12-30 18:03:24,120: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-30 18:03:24,121: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-30 18:03:24,121: INFO: common: created directory at: artifacts]
+[2024-12-30 18:03:24,122: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-12-30 18:03:24,122: INFO: data_ingestion: downloading data from https://drive.google.com/file/d/1Lx_zNHPtr2CzHVrRjnJg7TEiaIX-72lz/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-12-30 18:03:29,623: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1Lx_zNHPtr2CzHVrRjnJg7TEiaIX-72lz/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-12-30 18:03:30,566: INFO: main: >>>> stage Data Ingestion stage completed <<<<
+
+x============x]
+[2024-12-30 18:03:52,433: INFO: main: >>>> stage Data Ingestion stage started <<<<]
+[2024-12-30 18:03:52,436: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-30 18:03:52,438: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-30 18:03:52,438: INFO: common: created directory at: artifacts]
+[2024-12-30 18:03:52,438: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-12-30 18:03:52,439: INFO: data_ingestion: downloading data from https://drive.google.com/file/d/1Lx_zNHPtr2CzHVrRjnJg7TEiaIX-72lz/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-12-30 18:03:57,644: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1Lx_zNHPtr2CzHVrRjnJg7TEiaIX-72lz/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-12-30 18:03:58,537: INFO: main: >>>> stage Data Ingestion stage completed <<<<
+
+x============x]
