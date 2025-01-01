@@ -41,3 +41,9 @@ dagshub
 import dagshub
 dagshub.init(repo_owner='Immortal-Pi', repo_name='TumorFlow', mlflow=True)
 ```
+
+### DVC cmd 
+
+1. dvc init 
+2. dvc repro
+3. dvc dag 
