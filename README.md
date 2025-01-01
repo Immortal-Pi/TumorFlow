@@ -78,19 +78,12 @@ dagshub.init(repo_owner='Immortal-Pi', repo_name='TumorFlow', mlflow=True)
 ## 5. Open EC2 and install docker in EC2 Machine 
 ```bash
 #optinal
-
 sudo apt-get update -y
-
 sudo apt-get upgrade
-
 #required
-
 curl -fsSL https://get.docker.com -o get-docker.sh
-
 sudo sh get-docker.sh
-
 sudo usermod -aG docker ubuntu
-
 newgrp docker
 ```
 
@@ -102,12 +95,8 @@ setting>actions>runner>new self hosted runner> choose os> then run command one b
 ## 7. Setup github secrets:
 ```bash 
 AWS_ACCESS_KEY_ID=
-
 AWS_SECRET_ACCESS_KEY=
-
 AWS_REGION = us-east-1
-
 AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
-
 ECR_REPOSITORY_NAME = simple-app
 ```
