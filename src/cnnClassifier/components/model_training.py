@@ -83,3 +83,6 @@ class Training:
         self.save_model(
             path=self.config.trained_model_path,
             model=self.model )
+        self.save_model(
+            path=self.config.copy_path,
+            model=self.model )

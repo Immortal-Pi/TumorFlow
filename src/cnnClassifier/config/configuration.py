@@ -55,7 +55,7 @@ class ConfigurationManager:
         
         training_data=os.path.join(self.config.data_ingestion.unzip_dir,'Kidney-ct-scan-images')
         create_directories([
-            Path(training.root_dir)
+            Path(training.root_dir), Path(training.copy_dir)
         ])
 
         training_config=TrainingConfig(
@@ -63,6 +63,7 @@ class ConfigurationManager:
             trained_model_path=Path(training.trained_model_path),
             updated_base_model_path=Path(prepare_base_model.updated_base_model_path),
             trainging_data=Path(training_data),
+            copy_path=Path(training.copy_path),
             params_batch_size=params.BATCH_SIZE,
             params_epochs=params.EPOCHS,
             params_is_augmentation=params.AUGMENTATION,
