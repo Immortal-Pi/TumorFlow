@@ -1,9 +1,26 @@
 
-# Kidney-Tumor-Classification-MLflow-DVC
+# Kidney Tumor Detection Using Deep Learning
 
-May the data be with you 
+This project implements an end-to-end machine learning pipeline for identifying kidney tumors from CT scan images. It leverages a pretrained VGG16 model with a custom fully connected layer for tumor classification. The project includes data ingestion, model training, evaluation, and deployment workflows, all managed with MLOps principles.
+
+##  Features:
+- **Dataset**: kidney CT scan images (Tumor/Normal).
+    - dataset like :- https://www.kaggle.com/datasets/nazmul0087/ct-kidney-dataset-normal-cyst-tumor-and-stone 
+- **Model**: Transfer learning with VGG16 (Imagenet weights) and custom classifier layers.
+- **Data Augmentation**: Enhances dataset for better generalization.
+- **MLOps Integration**:
+    - Config-driven pipeline setup with YAML.
+    - Data versioning and workflow tracking using DVC.
+    - Modular project structure with reusable components.
+- **Deployment**: Dockerized Flask app for serving the model and deployed on AWS.
+- **Utilities**: Common functions for reading YAML, saving JSON, and handling data.
+- **Project Workflow**:
+    - Data ingestion and preprocessing.
+    - Model training and evaluation.
+    - Deployment with Docker and AWS.
 
 # How to run?
+
 
 ### STEPS:
 Clone the repository
@@ -33,70 +50,82 @@ Now,
 
 open up you local host and port
 
-# MLFLOW 
+# MLflow & pipeline tracking
 
-dagshub 
+dagshub repo : https://dagshub.com/Immortal-Pi/TumorFlow 
 
 ```bash
 import dagshub
-dagshub.init(repo_owner='Immortal-Pi', repo_name='TumorFlow', mlflow=True)
+dagshub.init(repo_owner='your-github-username', repo_name='your-repository-name', mlflow=True)
 ```
 
-### DVC cmd 
+### DVC commands
 
-1. dvc init 
-2. dvc repro
-3. dvc dag 
+    1. dvc init 
+    2. dvc repro
+    3. dvc dag 
+
+### Data-pipeline 
+
+### mlflow experiments 
 
 
-### AWS -CICD-Deployment-with-Github-Actions
 
-1. Login to AWS console 
-2. Create IAM use for deployment 
+## AWS CICD Deployment with Github Actions
+
+    1. Login to AWS console 
+    2. Create IAM use for deployment 
+
 ```bash
-#with specific access
-1. ECR access
-2. ECR Elastic Container 
+# with specific access
+    1. ECR access
+    2. ECR Elastic Container 
 
 # Description: About the deployment 
-1. Build docker image of the source code 
-2. Push the docker imange to ECR
-3. Launch your EC2 
-4. Pull your image from ECR in EC2 
-5. Launch your docker image in EC2 
+    1. Build docker image of the source code 
+    2. Push the docker imange to ECR
+    3. Launch your EC2 
+    4. Pull your image from ECR in EC2 
+    5. Launch your docker image in EC2 
 
 # Policy 
-1. AmazonEC2ContainerRegistryFullAccess
-2. AmazonEC2FullAccess
+    1. AmazonEC2ContainerRegistryFullAccess
+    2. AmazonEC2FullAccess
 ```
 
 ## 3. Create ECR repo to store/save docker image 
-    - save the URI: 011528265658.dkr.ecr.us-east-2.amazonaws.com/kidney
+    - save the URI: 011528265658.dkr.ecr.us-east-2.amazonaws.com/kidney (example)
 
 ## 4. Create EC2 machine (Ubuntu)
 
 ## 5. Open EC2 and install docker in EC2 Machine 
 ```bash
-#optinal
-sudo apt-get update -y
-sudo apt-get upgrade
-#required
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-sudo usermod -aG docker ubuntu
-newgrp docker
+# installation of docker on the virtual machine
+    sudo apt-get update -y
+    sudo apt-get upgrade
+    #required
+    curl -fsSL https://get.docker.com -o get-docker.sh
+    sudo sh get-docker.sh
+    sudo usermod -aG docker ubuntu
+    newgrp docker
 ```
 
-## 6. Configure EC2 as self-hosted runner:
-```bash
-setting>actions>runner>new self hosted runner> choose os> then run command one by one
-```
+## Demo 
 
-## 7. Setup github secrets:
-```bash 
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_REGION = us-east-1
-AWS_ECR_LOGIN_URI = example>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
-ECR_REPOSITORY_NAME = simple-app
-```
+
+
+## Tech Stack 
+
+- **Programming Language**: Python
+- **Deep Learning Framework**: Keras with TensorFlow backend
+- **MLOps Tools**:
+    - DVC (Data Version Control) for pipeline tracking and data versioning
+    - Docker for containerization
+- **Web Framework**: Flask for model deployment
+- **Cloud Platform**: AWS for hosting the model
+- **Version Control**: Git and GitHub
+- **Data Utilities**: YAML, JSON handling, and custom preprocessing functions
+- **Base Model**: VGG16 (pretrained on ImageNet)
+
+## Conclusion
+This project highlights the integration of MLOps principles in managing the entire machine learning lifecycle. While the focus was on building a kidney tumor detection model using transfer learning, the core objective was to emphasize the importance of project structure, automation of workflows, and the use of MLOps tools like DVC for version control and Docker for deployment. It serves as a foundation for understanding how to design scalable, maintainable, and efficient ML pipelines, ensuring reproducibility and streamlined collaboration in real-world scenarios.
