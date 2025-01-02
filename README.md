@@ -71,7 +71,7 @@ dagshub.init(repo_owner='Immortal-Pi', repo_name='TumorFlow', mlflow=True)
 ```
 
 ## 3. Create ECR repo to store/save docker image 
-    - save the URI: 011528265658.dkr.ecr.eu-north-1.amazonaws.com/kidney
+    - save the URI: 011528265658.dkr.ecr.us-east-2.amazonaws.com/kidney
 
 ## 4. Create EC2 machine (Ubuntu)
 
