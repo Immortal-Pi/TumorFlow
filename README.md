@@ -5,7 +5,7 @@ This project implements an end-to-end machine learning pipeline for identifying 
 
 ##  Features:
 - **Dataset**: kidney CT scan images (Tumor/Normal).
-    - dataset like :- https://www.kaggle.com/datasets/nazmul0087/ct-kidney-dataset-normal-cyst-tumor-and-stone 
+    - dataset link :- https://www.kaggle.com/datasets/nazmul0087/ct-kidney-dataset-normal-cyst-tumor-and-stone 
 - **Model**: Transfer learning with VGG16 (Imagenet weights) and custom classifier layers.
 - **Data Augmentation**: Enhances dataset for better generalization.
 - **MLOps Integration**:
@@ -67,9 +67,13 @@ dagshub.init(repo_owner='your-github-username', repo_name='your-repository-name'
 
 ### Data-pipeline 
 
-### mlflow experiments 
+![Data Pipeline](https://github.com/Immortal-Pi/TumorFlow/blob/main/documentation/datapipeline3.png) 
 
+### mlflow Integration
 
+![MLFlow Dashboard](https://github.com/Immortal-Pi/TumorFlow/blob/main/documentation/mlflow1.png)
+
+![MLFlow Experiment](https://github.com/Immortal-Pi/TumorFlow/blob/main/documentation/mlflow2.png)
 
 ## AWS CICD Deployment with Github Actions
 
@@ -112,7 +116,7 @@ dagshub.init(repo_owner='your-github-username', repo_name='your-repository-name'
 
 ## Demo 
 
-
+![UI Demo](https://github.com/Immortal-Pi/TumorFlow/blob/main/documentation/UI.gif)
 
 ## Tech Stack 
 
