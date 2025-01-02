@@ -1,5 +1,5 @@
 
-# Kidney-Disease-Classification-MLflow-DVC
+# Kidney-Tumor-Classification-MLflow-DVC
 
 May the data be with you 
 

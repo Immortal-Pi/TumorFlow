@@ -1,8 +1,8 @@
 AUGMENTATION: TRUE 
 IMAGE_SIZE: [224,224,3] # as per VGG 16 model 
-BATCH_SIZE: 16
+BATCH_SIZE: 20
 INCLUDE_TOP: False      # remove FC layer 
-EPOCHS: 85
+EPOCHS: 40
 CLASSES: 2
 WEIGHTS: imagenet       # pretrained model 
 LEARNING_RATE: 0.01 
